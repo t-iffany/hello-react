@@ -30,7 +30,7 @@ const Application = () => {
         placeholder="Type your name"
       />
       <Button onClick = {() => {reset()}}>Reset</Button>
-      <h1>Hello {name}</h1>
+      {name && <h1>Hello {name}</h1>}
     </main>
   );
 };
